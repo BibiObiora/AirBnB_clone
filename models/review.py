@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module creates a Review class"""
+"""A module that creates a Review class"""
 
 from models.base_model import BaseModel
 

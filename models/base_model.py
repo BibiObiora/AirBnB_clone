@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This script is the base model"""
+"""Base modelscript"""
 
 import uuid
 from datetime import datetime
@@ -11,7 +11,7 @@ class BaseModel:
     """Class from which all other classes will inherit"""
 
     def __init__(self, *args, **kwargs):
-        """Initializes instance attributes
+        """Instance attributes initialization"""
 
         Args:
             - *args: list of arguments
