@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="stylesheet" href="styles/103-common.css">
+    <link rel="stylesheet" href="styles/103-header.css">
+    <link rel="stylesheet" href="styles/103-footer.css">
+    <link rel="stylesheet" href="styles/103-filters.css">
+    <link rel="stylesheet" href="styles/103-places.css">
+    <title>AirBnB clone</title>
+  </head>
+  <body>
+    <header>
+      <div class="mobile_nav" role="navigation" aria-label="Navigate through site content">
+        <label for="main_check" class="main_nav_burguer" aria-label="Responsive popup menu">|||</label>
+        <input type="checkbox" id="main_check" name="main_check" class="main_nav_check" aria-hidden="true" tabindex=0>
+          <nav>
+              <ul class="nav_bar_level1">
+                <li>
+                    <label for="second_check"><span>States</span></label>
+                    <input type="checkbox" name="second_check" id="second_check" aria-hidden="true">
+                  <ul>
+                    <li><span>Arizona</span></li>
+                    <li><span>California</span></li>
+                  </ul>
+                  </li>
+                <li>
+                  <label for="third_check"><span>Amenities</span></label>
+                  <input type="checkbox" name="second_check" id="third_check" aria-hidden="true">
+                  <ul>
+                    <li><span>Internet</span></li>
+                    <li><span>Tv</span></li>
+                    <li><span>Wifi</span></li>
+                    <li><span>Kitchen</span></li>
+                    <li><span>Iron</span></li>
+                  </ul>
+                  </li>
+              </ul>
+        </nav><!-- final del main_nav_bar -->
+      </div>
+    </header>
+    <div class="container">
+      <section class="filters" role="navigation">
+        <div class="locations">
+          <h3>States</h3>
+          <h4>California, Arizona...</h4>
+          <ul class="popover">
+            <li><h2>Arizona:</h2>
+              <ul>
+                <li>Page</li>
+                <li>Page2</li>
+              </ul>
+            </li>
+            <li><h2>California:</h2>
+              <ul>
+                <li>San Francisco</li>
+                <li>Los Altos</li>
+              </ul>
+            </li>
+            </ul>
+        </div>
+        <div class="amenities">
+          <h3>Amenities</h3>
+          <h4>Internet, Kitchen...</h4>
+          <ul class="popover">
+            <li>Internet</li>
+            <li>Tv</li>
+            <li>Kitchen</li>
+            <li>Iron</li>
+          </ul>
+        </div>
+        <button type="button" name="button">Search</button>
+      </section> <!-- end fiter-->
+
+      <section class="places">
+        <h1>Places</h1>
+        <article><!-- My home -->
+          <div class="article_places_header">
+            <h2>My home</h2>
+            <div class="price_by_night">$80</div>
+          </div>
+          <div class="information">
+            <div class="max_guest">2 Guests</div>
+            <div class="number_rooms">1 Bedroom</div>
+            <div class="number_bathrooms">1 Bathroom</div>
+          </div><!-- end information -->
+          <div class="user">
+            <p><b>Owner:</b> Helena</p>
+          </div><!-- end user -->
+          <div class="description">
+            <p>I can accommodate up to 2 guests in separate bedrooms .
+You'll have access to 2 modern bathrooms, garden. The kitchen is also available for light meals, tea and coffee.</p>
+          </div><!-- end description -->
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>2 Reviews</h2>
+            <ul>
+              <li>
+                <h3>From Della the 21st May 2023</h3>
+                <p>Very clean and comfortable room. No issues.</p>
+              </li>
+              <li>
+                <h3>From Rob 19th May 2023</h3>
+                <p>Higly recommended!</p>
+              </li>
+            </ul>
+          </div>
+        </article><!-- end My home -->
+
+        <article>
+          <h2>Tiny house</h2>
+          <div class="price_by_night">$65</div>
+          <div class="information">
+            <div class="max_guest">4 Guests</div>
+            <div class="number_rooms">2 Bedrooms</div>
+            <div class="number_bathrooms">1 Bathroom</div>
+          </div><!-- end information -->
+          <div class="user">
+            <p><b>Owner:</b> Daniel</p>
+          </div><!-- end user -->
+          <div class="description">
+            <p>This charming apartment with one bathroom is ideally suited for two guests and is located in the vibrant center of New York City. Situated just steps away from the subway line, it offers easy access to various attractions—an effortless ride to Times Square, two stops away from Central Park, and three stops away from the iconic Statue of Liberty.</p>
+          </div><!-- end description -->
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>1 Review</h2>
+            <ul>
+              <li>
+                <h3>From Kylie the 15th May 2023</h3>
+                <p>it was really nice clean and comfortable place</p>
+              </li>
+              <li>
+                <h3>From Hailey 19th May 2023</h3>
+                <p>Higly recommended!</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <h2>A suite</h2>
+          <div class="price_by_night">$190</div>
+          <div class="information">
+            <div class="max_guest">5 Guests</div>
+            <div class="number_rooms">3 Bedroom</div>
+            <div class="number_bathrooms">2 Bathroom</div>
+          </div><!-- end information -->
+          <div class="user">
+            <p><b>Owner:</b> Kelly</p>
+          </div><!-- end user -->
+          <div class="description">
+            <p>A peaceful elegant four poster room with stunning views over Mawddach Estuary / views across to Barmouth from your window. Four Poster Suite with stunning views, elegantly decorated, coffee & tea facilities in room.</p>
+          </div><!-- end description -->
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>1 Review</h2>
+            <ul>
+              <li>
+                <h3>From Catherin the 19th May 2023</h3>
+                <p>I love this place. Stunning!</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article><!-- My home -->
+          <div class="article_places_header">
+            <h2>My house</h2>
+            <div class="price_by_night">$50</div>
+          </div>
+          <div class="information">
+            <div class="max_guest">2 Guests</div>
+            <div class="number_rooms">1 Bedroom</div>
+            <div class="number_bathrooms">1 Bathroom</div>
+          </div><!-- end information -->
+          <div class="user">
+            <p><b>Owner:</b>Paul</p>
+          </div><!-- end user -->
+          <div class="description">
+            <p>Modern  a stylish property with amazing views.2 minutes from the Britannia & Menai Bridge . Views of the mountains and 10 minute walk to the water edge . Close to all amenities. And walking distance to restaurants and bars . Fantastic location for Snowdonia, And Anglesey with superb beaches in the area . This would suit family’s and couples . And someone looking for a room .  at this centrally-located place.</p>
+          </div><!-- end description -->
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>2 Reviews</h2>
+            <ul>
+              <li>
+                <h3>From Bobby the 20th May 2023</h3>
+                <p>Great host!</p>
+              </li>
+              <li>
+                <h3>From Grace 18th May 2023</h3>
+                <p>Higly recommended!</p>
+              </li>
+            </ul>
+          </div>
+        </article><!-- end My home -->
+
+        <article><!-- My home -->
+          <div class="article_places_header">
+            <h2>Otaku rooms</h2>
+            <div class="price_by_night">$79</div>
+          </div>
+          <div class="information">
+            <div class="max_guest">2 Guests</div>
+            <div class="number_rooms">1 Bedroom</div>
+            <div class="number_bathrooms">1 Bathroom</div>
+          </div><!-- end information -->
+          <div class="user">
+            <p><b>Owner:</b> Amah</p>
+          </div><!-- end user -->
+          <div class="description">
+            <p>This charming apartment with one bathroom is ideally suited for two guests and is located in the vibrant center of New York City. Situated just steps away from the subway line, it offers easy access to various attractions—an effortless ride to Times Square, two stops away from Central Park, and three stops away from the iconic Statue of Liberty.</p>
+          </div><!-- end description -->
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>2 Reviews</h2>
+            <ul>
+              <li>
+                <h3>From Dora the 20th May 2023</h3>
+                <p>Perfect host, very helpful and kind.</p>
+              </li>
+              <li>
+                <h3>From Kendell 19th May 2023</h3>
+                <p>Higly recommended!</p>
+              </li>
+            </ul>
+          </div>
+        </article><!-- end My home -->
+
+        <article><!-- My home -->
+          <div class="article_places_header">
+            <h2>Donkey Kong Country</h2>
+            <div class="price_by_night">$80</div>
+          </div>
+          <div class="information">
+            <div class="max_guest">8 Guests</div>
+            <div class="number_rooms">1 Bedroom</div>
+            <div class="number_bathrooms">1 Bathroom</div>
+          </div><!-- end information -->
+          <div class="user">
+            <p><b>Owner:</b> Janet</p>
+          </div><!-- end user -->
+          <div class="description">
+            <p>This charming apartment with one bathroom is ideally suited for two guests and is located in the vibrant center of New York City. Situated just steps away from the subway line, it offers easy access to various attractions—an effortless ride to Times Square, two stops away from Central Park, and three stops away from the iconic Statue of Liberty.</p>
+          </div><!-- end description -->
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>2 Reviews</h2>
+            <ul>
+              <li>
+                <h3>From Carol the 20th May 2023</h3>
+                <p>The house is just beautiful and the hosts are super friendly.</p>
+              </li>
+              <li>
+                <h3>From Roland 20th May 2023</h3>
+                <p>Higly recommended!</p>
+              </li>
+            </ul>
+          </div>
+        </article><!-- end My home -->
+
+        </section> <!-- end section -->
+    </div>
+    <footer aria-label="Footer brand information">
+      <p>Best School</p>
+    </footer>
+  </body>
+</html>
